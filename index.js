@@ -17,7 +17,7 @@ const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const returnSquar = (squarArray) => {
   let newSquarArray = [];
   for (let index = 0; index <= squarArray.length - 1; index++) {
-    newSquarArray.push(squarArray[index] * [index]);
+    newSquarArray.push(squarArray[index] * squarArray[index]);
   }
   console.log(newSquarArray);
 };
