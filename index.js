@@ -15,8 +15,10 @@ console.log(squareFun(8));
 // Q4) [🌶️🌶️] Create an arrow function that takes an array of numbers and returns a new array with each number squared.
 const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const returnSquar = (squarArray) => {
+  let newSquarArray = [];
   for (let index = 0; index <= squarArray.length - 1; index++) {
-    console.log(squarArray[index] * 2);
+    newSquarArray.push(squarArray[index] * 2);
   }
+  console.log(newSquarArray);
 };
 returnSquar(numArray);
